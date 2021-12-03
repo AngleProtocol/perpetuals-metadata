@@ -50,8 +50,8 @@ async function generateJSON(
             .div(ethers.BigNumber.from(10).pow(12))
             .toNumber() / 1e6,
           perpetualData.margin
-            .div(ethers.BigNumber.from(10).pow(collat.decimals - 6))
-            .toNumber() / 1e6,
+            .div(ethers.BigNumber.from(10).pow(collat.decimals - 4))
+            .toNumber() / 1e4,
           perpetualData.margin
             .add(perpetualData.committedAmount)
             .mul(ethers.BigNumber.from(10).pow(6))
